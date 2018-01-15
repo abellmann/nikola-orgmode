@@ -14,7 +14,7 @@ Nikola [orgmode plugin](https://plugins.getnikola.com/v7/orgmode/)
 You can pull the image from the docker hub registry with
 
 ```
-docker pull nikola-orgmode
+docker pull abellmann/nikola-orgmode
 ```
 
 Please note that the image does not have a default command set.  Also
