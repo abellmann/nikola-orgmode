@@ -122,7 +122,9 @@ docker-compose run --service-ports nikola-orgmode
 This will start an interactive shell. You can run `nikola serve` in this shell
 and see your site at http://192.168.99.100:8000
 
+## Notes
 
+Nikola needs internet access. If you are behind a proxy, you need to configure it inside the container.
 
 
 
