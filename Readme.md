@@ -53,13 +53,17 @@ which is also the working directory inside the container.
 
 On Windows, the Nikola database file (.doit.db) cannot be in a mounted directory
 or the `nikola build` will fail. So the first time you start the container, you
-should create a symlink for this file:
+should create a symlink for this file.
+
+You will need permissions on your Windows Hosts to create symbolic links. A guide on 
+setting up permission for symlinks with Virtualbox is [here](https://stackoverflow.com/questions/17895256/creating-symbolic-link-protocol-error/39218200?sgp=2#39218200)   
 
 ``` sh
 >pwd
 /site
 >ln -s /tmp/.doit.db
 ```
+
 Once in the container, you can use the regular `nikola` commands to
 maintain your site interactively. Of course, you can also start up a
 container for a one-off `nikola` command.  For example
